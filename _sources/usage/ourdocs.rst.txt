@@ -32,6 +32,5 @@ https://www.doxygen.nl
 
 Contributing to Our Documentation
 #################################
-If you would like to contribute to the documentation, have questions or
-would like clarification or addition to the documentation about
-a particular topic, please :ref:`contact us! <contact>`.
+If you would like to contribute to the documentation, have questions or would like clarification or
+more detail on a particular topic, please :ref:`contact us! <contact>`.
