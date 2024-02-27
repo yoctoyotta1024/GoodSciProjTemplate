@@ -8,7 +8,7 @@ George Datseris.
 ## Install
 To (locally) reproduce this project simply clone the repository.
 ```
-$ git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
+git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 ```
 You will need to run ``pre-commit install`` but other than that all the necessary packages for you
 to run & have fun with everything should work out of the box... If not, please raise an issue on the
@@ -24,9 +24,9 @@ files using Doxygen followed by .html files using Sphinx, then view the .html in
 browser. E.g.
 
 ```
-$ cd ./docs && mkdir build && mkdir build/doxygen
-$ doxygen doxygen/doxygen.dox && make html
-$ open build/html/index.html
+cd ./docs && mkdir build && mkdir build/doxygen
+doxygen doxygen/doxygen.dox && make html
+open build/html/index.html
 ```
 
 Thank you and good luck!
