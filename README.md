@@ -11,7 +11,7 @@ To (locally) reproduce this project simply clone the repository.
 $ git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 ```
 You will need to run ``pre-commit install`` but other than that all the necessary packages for you
-to run / have fun with everything should work out of the box... If not, please raise an issue on the
+to run & have fun with everything should work out of the box... If not, please raise an issue on the
 GitHub repository.
 
 ## Documentation
