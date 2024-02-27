@@ -28,7 +28,7 @@ scientific practises into your GitHub repositories. The template demonstrates:
 * how to use continuous integration (CI) to run your tests and publish your documentation on GitHub (see https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration)
 
 To (locally) reproduce this project, simply clone the repository. You will need to run
-``pre-commit install`` but other than that all the necessary packages for you to run / have fun with
+``pre-commit install`` but other than that all the necessary packages for you to run & have fun with
 everything should work out of the box... If not, please raise an issue on the
 GitHub repository.
 
