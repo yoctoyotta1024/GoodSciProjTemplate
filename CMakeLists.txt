@@ -6,7 +6,7 @@ project(project
 )
 
 ## Use the pybind11 package from .gitmodules
-add_subdirectory(extern/pybind11)
+add_subdirectory(external/pybind11)
 
 ## Create the Python extension module from C++ source files
 set(SOURCES libs/src_cxx/mock.cpp)
