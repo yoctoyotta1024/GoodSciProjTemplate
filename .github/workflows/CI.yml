@@ -28,14 +28,14 @@ jobs:
           conda activate /usr/share/miniconda/envs/myenv
           conda info --envs
 
-      # - name: Install Pybind11
-      #   run: |
-      #     git submodule add https://github.com/pybind/pybind11.git external/pybind11
-      #     git submodule update --init
-      # - name: Build Pybind11 module for C++ code
-      #   run: |
-      #     cmake -S ./ -B ./build
-      #     cd build && make
+      - name: Install Pybind11
+        run: |
+          git submodule add https://github.com/pybind/pybind11.git external/pybind11
+          git submodule update --init
+      - name: Build Pybind11 module for C++ code
+        run: |
+          cmake -S ./ -B ./build
+          cd build && make
       - name: Test with pytest
         run: pytest ./tests
 
