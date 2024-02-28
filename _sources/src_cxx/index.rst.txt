@@ -4,4 +4,4 @@ C++ Package
 .. toctree::
    :maxdepth: 2
 
-   mock
+   mock_cxx
