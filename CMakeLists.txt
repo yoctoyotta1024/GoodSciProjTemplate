@@ -5,8 +5,15 @@ project(project
   VERSION 0.0.0
 )
 
-## Use the pybind11 package from .gitmodules
-add_subdirectory(external/pybind11)
+## Find and use the pybind11 package
+include(FetchContent)
+FetchContent_Declare(
+  pybind11
+  DOWNLOAD_EXTRACT_TIMESTAMP TRUE
+  URL https://github.com/pybind/pybind11/archive/refs/tags/v2.11.1.tar.gz
+  URL_HASH MD5=49e92f92244021912a56935918c927d0
+)
+FetchContent_MakeAvailable(pybind11)
 
 ## Create the Python extension module from C++ source files
 set(SOURCES libs/src_cxx/mock.cpp)
