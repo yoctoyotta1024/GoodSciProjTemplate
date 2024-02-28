@@ -2,7 +2,7 @@
  * Copyright (c) 2024 MPI-M, Clara Bayley
  * 
  * ----- GoodSciProjTemplate -----
- * File: mock.hpp
+ * File: mock_cxx.hpp
  * Project: src_cxx
  * Created Date: Tuesday 27th February 2024
  * Author: Clara Bayley (CB)
@@ -19,8 +19,8 @@
  */
 
 
-#ifndef LIBS_SRC_CXX_MOCK_HPP_
-#define LIBS_SRC_CXX_MOCK_HPP_
+#ifndef LIBS_SRC_CXX_MOCK_CXX_HPP_
+#define LIBS_SRC_CXX_MOCK_CXX_HPP_
 
 #include <numbers>
 #include <pybind11/pybind11.h>
@@ -52,4 +52,4 @@ inline int add(const int ii, const int jj) {
   return ii + jj;
 }
 
-#endif   // LIBS_SRC_CXX_MOCK_HPP_
+#endif   // LIBS_SRC_CXX_MOCK_CXX_HPP_

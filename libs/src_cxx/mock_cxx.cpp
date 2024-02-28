@@ -2,7 +2,7 @@
  * Copyright (c) 2024 MPI-M, Clara Bayley
  * 
  * ----- GoodSciProjTemplate -----
- * File: mock.cpp
+ * File: mock_cxx.cpp
  * Project: src_cxx
  * Created Date: Wednesday 28th February 2024
  * Author: Clara Bayley (CB)
@@ -18,7 +18,7 @@
  */
 
 
-#include "mock.hpp"
+#include "mock_cxx.hpp"
 
 PYBIND11_MODULE(mock_cxx, m) {
     m.doc() = "pybind11 example plugin";   // optional module docstring

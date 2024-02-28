@@ -16,7 +16,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(pybind11)
 
 ## Create the Python extension module from C++ source files
-set(SOURCES libs/src_cxx/mock.cpp)
+set(SOURCES libs/src_cxx/mock_cxx.cpp)
 pybind11_add_module(mock_cxx MODULE ${SOURCES})
 
 set_target_properties(mock_cxx PROPERTIES
