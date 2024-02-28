@@ -15,26 +15,41 @@ jobs:
           activate-environment: myenv
           environment-file: environment.yml
           auto-activate-base: false
-      - run: |
+
+      - name: Conda Info
+        run: |
           conda info
           conda list
+
       - name: Activate Conda Environment
         run: |
           conda init
           source /home/runner/.bashrc
           conda activate /usr/share/miniconda/envs/myenv
           conda info --envs
+
+      - name: Install Pybind11
+        run: |
+          git submodule add https://github.com/pybind/pybind11.git external/pybind11
+          git submodule update --init
+      - name: Build Pybind11 module for C++ code
+        run: |
+          cmake -S ./ -B ./build
+          cd build && make
+      - name: Test with pytest
+        run: pytest ./tests
+
       - name: Install Doxygen
         run: /usr/share/miniconda/envs/myenv/bin/doxygen --version
         shell: bash
-      - name: Test with pytest
-        run: pytest .
       - name: Generate Doxygen Documentation
-        run: cd docs &&
+        run: |
+          cd docs &&
           mkdir build &&
           mkdir build/doxygen &&
           /usr/share/miniconda/envs/myenv/bin/doxygen doxygen/doxygen.dox
         shell: bash
+
       - name: Build docs
         run: |
           cd docs && make html
@@ -57,6 +72,7 @@ jobs:
         with:
           name: html-docs
           path: docs/build/html/
+
       - name: Publish docs on github pages
         uses: peaceiris/actions-gh-pages@v3
         with:
