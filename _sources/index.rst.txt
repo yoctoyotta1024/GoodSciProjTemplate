@@ -41,6 +41,7 @@ Contents
 
    usage/getstart
    usage/ourdocs
+   usage/ourtests
    src_py/index
    src_cxx/index
 
