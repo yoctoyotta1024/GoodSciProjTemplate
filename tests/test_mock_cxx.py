@@ -2,13 +2,13 @@
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- Microphysics Test Cases -----
-File: text_mock_cxx.py
+File: test_mock_cxx.py
 Project: tests
 Created Date: Wednesday 28th February 2024
 Author: Clara Bayley (CB)
 Additional Contributors:
 -----
-Last Modified: Wednesday 28th February 2024
+Last Modified: Wednesday 20th March 2024
 Modified By: CB
 -----
 License: BSD 3-Clause "New" or "Revised" License

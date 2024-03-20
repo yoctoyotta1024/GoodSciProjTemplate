@@ -22,7 +22,7 @@ GitHub repository.
 
 ## Documentation
 Some documentation has been set up for this project which you should be able to find hosted online
-here: 
+here:
 ### https://yoctoyotta1024.github.io/GoodSciProjTemplate/
 ... If not, please raise an issue on the GitHub repository.
 
