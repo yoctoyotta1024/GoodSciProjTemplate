@@ -6,18 +6,25 @@ guidelines from [this](https://www.youtube.com/watch?v=x3swaMSCcYk) Good Scienti
 George Datseris.
 
 ## Install
-To (locally) reproduce this project simply clone the repository.
+To (locally) reproduce this project simply clone the repository:
 ```
 git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 ```
-You will need to run ``pre-commit install`` but other than that all the necessary packages for you
-to run & have fun with everything should work out of the box... If not, please raise an issue on the
+and then create an environment with the necessary dependencies installed (using micromamba, mamba
+or conda as listed in the environment.yml):
+```
+conda env create -f environment.yml
+conda activate scienv
+```
+Finally you need to run ``pre-commit install`` but other than that everything should work out of
+the box and you can now run & have fun with the project... If not, please raise an issue on the
 GitHub repository.
 
 ## Documentation
 Some documentation has been set up for this project which you should be able to find hosted online
-here: https://yoctoyotta1024.github.io/GoodSciProjTemplate/... If not, please raise an issue on the
-GitHub repository.
+here: 
+### https://yoctoyotta1024.github.io/GoodSciProjTemplate/
+... If not, please raise an issue on the GitHub repository.
 
 Alternatively, You can build and view the documentation locally. First build the .xml
 files using Doxygen followed by .html files using Sphinx, then view the .html in your default
