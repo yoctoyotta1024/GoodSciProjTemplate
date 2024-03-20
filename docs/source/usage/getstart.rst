@@ -55,9 +55,18 @@ Some suggested third steps:
 #. Create a pull request (and accept it if your tests pass) to merge your changes with the main branch of your GitHub repository.
 #. Be proud of your new code with documentation and tests.
 
-
 Want more ideas?!
 #################
 Have you thought about adding contributors, acknowledgements, more Python and/or
 other requirements / enviroments, more CI or pre-commit tasks, and an automatic file header
 generator? Or maybe you should ponder it all over a cup of tea and some biscuits...
+
+A Note on Commiting Large Files:
+################################
+This project does not forbid you from commiting and pushing large files such as Jupyter notebooks
+(.ipynb files) and images (e.g. .png files) to your repository. However, such actions are highly
+discouraged and usually a sign that you are doing something wrong. If you want to use Jupyter
+notebooks, consider using the `Jupyter Book <https://jupyterbook.org/en/stable/intro.html>`_
+extension of Sphinx to store your notebooks as markdown files. At the very least, you should scrub
+notebooks before committing them because you do not want to destory the power of git diff by making
+it start comparing Jupyter notebook hashes.
