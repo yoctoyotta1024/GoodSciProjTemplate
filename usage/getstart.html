@@ -213,11 +213,14 @@
 </div>
 <p>and then create an environment with the necessary dependencies installed (using micromamba, mamba
 or conda as listed in the environment.yml):</p>
-<p>Finally install the pre-commit hooks:
-.. code-block:: console</p>
-<blockquote>
-<div><p>$ pre-commit install</p>
-</div></blockquote>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">micromamba env create -f environment.yml</span>
+<span class="go">micromamba activate scienv</span>
+</pre></div>
+</div>
+<p>Finally install the pre-commit hooks:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>pre-commit<span class="w"> </span>install
+</pre></div>
+</div>
 <p>which will be used when you try to commit something or you execute <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">run</span></code>. You can learn
 more about the powers of pre-commit from <a class="reference external" href="https://pre-commit.com">their documentation:</a>.</p>
 <p>That’s it, you’re done! But maybe now you want to customise the project and push it to your own

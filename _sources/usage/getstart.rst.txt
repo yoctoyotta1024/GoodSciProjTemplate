@@ -13,10 +13,12 @@ and then create an environment with the necessary dependencies installed (using 
 or conda as listed in the environment.yml):
 
 .. code-block:: console
+
   micromamba env create -f environment.yml
   micromamba activate scienv
 
 Finally install the pre-commit hooks:
+
 .. code-block:: console
 
   $ pre-commit install
