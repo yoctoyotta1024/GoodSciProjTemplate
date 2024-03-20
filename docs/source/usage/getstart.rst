@@ -18,7 +18,7 @@ or conda as listed in the environment.yml):
 
 Finally install the pre-commit hooks:
 .. code-block:: console
-  
+
   $ pre-commit install
 
 which will be used when you try to commit something or you execute ``pre-commit run``. You can learn
