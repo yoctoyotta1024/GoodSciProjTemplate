@@ -11,7 +11,7 @@ Create a `GitHub issue <https://github.com/yoctoyotta1024/GoodSciProjTemplate/is
 
 .. _merge:
 
-Create a `GitHub merge request <https://github.com/yoctoyotta1024/GoodSciProjTemplate/merge_request/new>`_
+Create a `GitHub merge request <https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare>`_
 #########################################################################################################
 
 Main Developers
