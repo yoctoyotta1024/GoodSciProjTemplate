@@ -14,8 +14,8 @@ or conda as listed in the environment.yml):
 
 .. code-block:: console
 
-  micromamba env create -f environment.yml
-  micromamba activate scienv
+  $ micromamba env create -f environment.yml
+  $ micromamba activate scienv
 
 Finally install the pre-commit hooks:
 
