@@ -260,6 +260,16 @@ GitHub repo…</p>
 other requirements / enviroments, more CI or pre-commit tasks, and an automatic file header
 generator? Or maybe you should ponder it all over a cup of tea and some biscuits…</p>
 </section>
+<section id="a-note-on-commiting-large-files">
+<h2>A Note on Commiting Large Files:<a class="headerlink" href="#a-note-on-commiting-large-files" title="Link to this heading">#</a></h2>
+<p>This project does not forbid you from commiting and pushing large files such as Jupyter notebooks
+(.ipynb files) and images (e.g. .png files) to your repository. However, such actions are highly
+discouraged and usually a sign that you are doing something wrong. If you want to use Jupyter
+notebooks, consider using the <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter Book</a>
+extension of Sphinx to store your notebooks as markdown files. At the very least, you should scrub
+notebooks before committing them because you do not want to destory the power of git diff by making
+it start comparing Jupyter notebook hashes.</p>
+</section>
 </section>
 
         </article>
@@ -323,6 +333,7 @@ generator? Or maybe you should ponder it all over a cup of tea and some biscuits
 <li><a class="reference internal" href="#necessary-second-steps">Necessary second steps:</a></li>
 <li><a class="reference internal" href="#some-suggested-third-steps">Some suggested third steps:</a></li>
 <li><a class="reference internal" href="#want-more-ideas">Want more ideas?!</a></li>
+<li><a class="reference internal" href="#a-note-on-commiting-large-files">A Note on Commiting Large Files:</a></li>
 </ul>
 </li>
 </ul>
