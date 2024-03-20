@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2024 MPI-M, Clara Bayley
- * 
+ *
  * ----- GoodSciProjTemplate -----
  * File: mock_cxx.hpp
  * Project: src_cxx
@@ -8,7 +8,7 @@
  * Author: Clara Bayley (CB)
  * Additional Contributors:
  * -----
- * Last Modified: Wednesday 28th February 2024
+ * Last Modified: Wednesday 20th March 2024
  * Modified By: CB
  * -----
  * License: BSD 3-Clause "New" or "Revised" License

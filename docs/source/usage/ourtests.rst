@@ -7,7 +7,7 @@ included in the CI.yml and can be used to test both Python and C++ code.
 .. _python-test:
 
 Testing Python Code
-################### 
+###################
 
 Easily done with pytest!
 
@@ -24,11 +24,11 @@ Testing C++ Code
 For testing C++ code, we first make a Python module out of it using pybind11, e.g. via
 
 .. code-block:: console
-  
+
   $ cmake -S ./ -B ./build
   $ cd build && make
 
-which fetches and uses pybind11 (see CMakeLists.txt) to make a Python module out of the C++ code - 
+which fetches and uses pybind11 (see CMakeLists.txt) to make a Python module out of the C++ code -
 provided you have first written appropriate bindings(!). The Python module is then tested using
 pytest just :ref:`like an ordinary python module <python-test>`.
 
