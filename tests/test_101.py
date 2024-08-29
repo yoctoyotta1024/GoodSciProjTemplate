@@ -1,4 +1,4 @@
-'''
+"""
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- GoodSciProjTemplate -----
@@ -16,9 +16,9 @@ https://opensource.org/licenses/BSD-3-Clause
 -----
 File Description:
 test just to check tests work
-'''
+"""
 
 
 def test_math():
-	assert 1+1 == 2
-	assert 1-1 == 0
+    assert 1 + 1 == 2
+    assert 1 - 1 == 0

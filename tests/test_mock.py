@@ -1,4 +1,4 @@
-'''
+"""
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- GoodSciProjTemplate -----
@@ -16,11 +16,11 @@ https://opensource.org/licenses/BSD-3-Clause
 -----
 File Description:
 package for tests of python mock module
-'''
-
+"""
 
 import numpy as np
 from libs.src_py import mock
 
+
 def test_area_circle():
-	assert mock.area_circle(1.0) == np.pi
+    assert mock.area_circle(1.0) == np.pi

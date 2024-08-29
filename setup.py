@@ -1,4 +1,4 @@
-'''
+"""
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- GoodSciProjTemplate -----
@@ -16,17 +16,16 @@ https://opensource.org/licenses/BSD-3-Clause
 -----
 File Description:
 setup for pre-commit tool
-'''
-
+"""
 
 from setuptools import setup, find_packages
 
 setup(
-    name='GoodSciProjTemplate',
-    version='0.0.0',
+    name="GoodSciProjTemplate",
+    version="0.0.0",
     packages=find_packages(),
     install_requires=[
-        'pytest',
-        'sphinx',
+        "pytest",
+        "sphinx",
     ],
 )

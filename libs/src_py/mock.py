@@ -1,4 +1,4 @@
-'''
+"""
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- GoodSciProjTemplate -----
@@ -16,33 +16,34 @@ https://opensource.org/licenses/BSD-3-Clause
 -----
 File Description:
 source file for mock python module
-'''
-
+"""
 
 import numpy as np
 
+
 def hello_world():
-  """
-  Prints 'Hello World!'.
+    """
+    Prints 'Hello World!'.
 
-  This function doesn't take any parameters.
-  """
+    This function doesn't take any parameters.
+    """
 
-  print("Hello World!")
+    print("Hello World!")
+
 
 def area_circle(radius):
-  """
-  Calculate the area of a circle.
+    """
+    Calculate the area of a circle.
 
-  Parameters:
-      radius (float): The radius of the circle.
+    Parameters:
+        radius (float): The radius of the circle.
 
-  Returns:
-      float: The area of the circle.
+    Returns:
+        float: The area of the circle.
 
-  Examples:
-    >>> area_circle(4.0)
-    50.26548245743669...
-  """
+    Examples:
+      >>> area_circle(4.0)
+      50.26548245743669...
+    """
 
-  return np.pi * radius * radius
+    return np.pi * radius * radius

@@ -1,4 +1,4 @@
-'''
+"""
 Copyright (c) 2024 MPI-M, Clara Bayley
 
 ----- GoodSciProjTemplate -----
@@ -16,14 +16,13 @@ https://opensource.org/licenses/BSD-3-Clause
 -----
 File Description:
 mock script to run hello world from mock python package
-'''
-
+"""
 
 import sys
 import pathlib
 
 path = str(pathlib.Path(__file__).parent.resolve())
-sys.path.append(path+'/../libs/') # add path to src_py to PATH
+sys.path.append(path + "/../libs/")  # add path to src_py to PATH
 
 from src_py import mock
 
