@@ -43,6 +43,7 @@ Necessary second steps:
 #. Make the project name yours instead of "GoodSciProjTemplate".
 #. Make the release/version yours instead of "0.0.0".
 #. Make the citation and liscence refer to you instead of me.
+#. Corect the repository name and its owner for GitHub (e.g. in the CI.yml and cog.toml).
 #. Write a new README.md (shorter is generally better) and include a link to your documentation in it.
 #. Change the GitHub links in the .rst files to the correct ones for your GitHub repository (*hint*: you find these files in the `docs` directory).
 
