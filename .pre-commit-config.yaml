@@ -15,7 +15,7 @@ repos:
     -   id: cpplint
         args: [--linelength=100, "--filter=-runtime/references,-readability/braces,-build/include,-build/c++11"]
         types_or: [c, c++, cuda]
-    repo: https://github.com/pre-commit/pre-commit-hooks
+-   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.2.0
     hooks:
     -   id: check-yaml
