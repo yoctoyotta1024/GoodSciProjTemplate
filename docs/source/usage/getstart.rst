@@ -61,13 +61,15 @@ Some suggested third steps:
 Want more ideas?!
 #################
 Have you thought about adding contributors, acknowledgements, more Python and/or
-other requirements / enviroments, more CI or pre-commit tasks, and an automatic file header
-generator? Or maybe you should ponder it all over a cup of tea and some biscuits...
+other requirements/enviroments, more CI or pre-commit tasks, and an automatic file header
+generator? Maybe you've noticed the repo uses  `conventional commit<https://www.conventionalcommits.org/en/v1.0.0/>`_
+messages to enable `cocogitto<https://docs.cocogitto.io/>`_'s automatic version control?
+Or maybe you should ponder all this over a cup of tea and some biscuits...
 
 A Note on Commiting Large Files:
 ################################
-This project does not forbid you from commiting and pushing large files such as Jupyter notebooks
-(.ipynb files) and images (e.g. .png files) to your repository. However, such actions are highly
+This project forbids you from commiting and pushing large files such as Jupyter notebooks
+(.ipynb files) and images (e.g. .png files) to your repository. Such actions are highly
 discouraged and usually a sign that you are doing something wrong. If you want to use Jupyter
 notebooks, consider using the `Jupyter Book <https://jupyterbook.org/en/stable/intro.html>`_
 extension of Sphinx to store your notebooks as markdown files. At the very least, you should scrub
