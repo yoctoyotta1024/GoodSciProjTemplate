@@ -1,20 +1,6 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
--   repo: https://github.com/psf/black
-    rev: 22.10.0
-    hooks:
-    -   id: black
--   repo: https://github.com/psf/black-pre-commit-mirror
-    rev: 24.3.0
-    hooks:
-    -   id: black-jupyter
--   repo: https://gitlab.com/daverona/pre-commit/cpp
-    rev: 0.8.0
-    hooks:
-    -   id: cpplint
-        args: [--linelength=100, "--filter=-runtime/references,-readability/braces,-build/include,-build/c++11"]
-        types_or: [c, c++, cuda]
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v3.2.0
     hooks:
@@ -35,3 +21,28 @@ repos:
     -   id: trailing-whitespace
         name: Trim trailing whitespaces
         description: Trailing whitespaces are trimmed
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.1.4
+  hooks:
+    - id: ruff
+      args: ["--ignore=E402"]  # Ignore E402 error "Module level import not at top of file"
+      description: python linter
+    - id: ruff-format
+      description: python formatter
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.3.0
+    hooks:
+    -   id: black-jupyter
+        description: formating ipynb notebook
+-   repo: https://gitlab.com/daverona/pre-commit/cpp
+    rev: 0.8.0
+    hooks:
+    -   id: cpplint
+        args: [--linelength=100, "--filter=-runtime/references,-readability/braces,-build/include,-build/c++11"]
+        types_or: [c, c++, cuda]
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: <git sha or tag>
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
+        args: []
