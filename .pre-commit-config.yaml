@@ -1,16 +1,37 @@
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
--   repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v3.2.0
+-   repo: https://github.com/psf/black
+    rev: 22.10.0
     hooks:
-    -   id: trailing-whitespace
-    -   id: end-of-file-fixer
-    -   id: check-yaml
-    -   id: check-added-large-files
+    -   id: black
+-   repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 24.3.0
+    hooks:
+    -   id: black-jupyter
 -   repo: https://gitlab.com/daverona/pre-commit/cpp
     rev: 0.8.0
     hooks:
     -   id: cpplint
         args: [--linelength=100, "--filter=-runtime/references,-readability/braces,-build/include,-build/c++11"]
         types_or: [c, c++, cuda]
+    repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+    -   id: check-yaml
+        name: Check YAML file formatting
+    -   id: check-added-large-files
+        name: No large Files
+        description: Checks that you did not unconsciously upload some enormous file
+    -   id: check-ast
+        name: Check Valid Python
+        description: check if python file is valid
+    -   id: end-of-file-fixer
+        name: End of File Fix
+        description: Checks file ends on newline
+    -   id: no-commit-to-branch
+        name: No direct commit to main
+        description: Do not commit to main directly
+    -   id: trailing-whitespace
+        name: Trim trailing whitespaces
+        description: Trailing whitespaces are trimmed
