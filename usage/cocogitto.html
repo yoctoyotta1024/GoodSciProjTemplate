@@ -275,8 +275,8 @@ perform version bumping and generate a changelog for you.</p>
 <h2>Setting-Up Cocogitto<a class="headerlink" href="#setting-up-cocogitto" title="Link to this heading">¶</a></h2>
 <p>This repository enables a few of cocogitto’s optional features (see <code class="docutils literal notranslate"><span class="pre">cog.toml</span></code>).
 One is that the changelog is generated via GitHub’s CI relative to the first tag called “v0.0.0”. You
-therefore need to add this tag to your GitHub repository, either on GitHub or by pushing the tag from
-your local repository, e.g.</p>
+therefore need to delete any existing <code class="docutils literal notranslate"><span class="pre">CHANGELOG.md</span></code> and then add this tag to your GitHub repository,
+either on GitHub or by pushing the tag from your local repository, e.g.</p>
 <ol class="loweralpha simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v0.0.0</span> <span class="pre">-m</span> <span class="pre">&quot;init</span> <span class="pre">repo&quot;</span></code>,</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code>.</p></li>
