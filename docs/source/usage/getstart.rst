@@ -9,13 +9,13 @@ Clone GoodSciProjTemplate's GitHub repository:
 
   $ git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 
-and then create an environment with the necessary dependencies installed (using micromamba, mamba
+and then create an environment with the necessary dependencies installed (e.g. using micromamba,
 or conda as listed in the environment.yml):
 
 .. code-block:: console
 
-  $ micromamba env create -f environment.yml
-  $ micromamba activate scienv
+  $ micromamba create -f environment.yml
+  $ micromamba activate goodsciproj_env
 
 Finally install the pre-commit hooks:
 
@@ -28,6 +28,9 @@ more about the powers of pre-commit from `their documentation: <https://pre-comm
 
 That's it, you're done! But maybe now you want to customise the project and push it to your own
 GitHub repo...
+
+Making the Project Your Own
+===========================
 
 Necessary first steps:
 ###########################
@@ -46,6 +49,8 @@ Necessary second steps:
 #. Corect the repository name and its owner for GitHub (e.g. in the CI.yml and cog.toml).
 #. Write a new README.md (shorter is generally better) and include a link to your documentation in it.
 #. Change the GitHub links in the .rst files to the correct ones for your GitHub repository (*hint*: you find these files in the `docs` directory).
+#. Setup (or delete) cocogitto
+#. Setup (or delete) Python bindings for C++
 
 Some suggested third steps:
 ###########################
@@ -62,7 +67,8 @@ Want more ideas?!
 #################
 Have you thought about adding contributors, acknowledgements, more Python and/or
 other requirements/enviroments, more CI or pre-commit tasks, and an automatic file header
-generator? Maybe you've noticed the repo uses  `conventional commit<https://www.conventionalcommits.org/en/v1.0.0/>`_
+generator? Maybe you've noticed this repository uses 
+`conventional commit <https://www.conventionalcommits.org/en/v1.0.0/>`_
 messages to enable `cocogitto<https://docs.cocogitto.io/>`_'s automatic version control?
 Or maybe you should ponder all this over a cup of tea and some biscuits...
 
