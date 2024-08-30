@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.1](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/f4ae4404c9451e8aef948ccd381fe156e43ea74a..v0.1.1) - 2024-08-30
+#### Bug Fixes
+- no commit to main - ([5f7c44b](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/5f7c44b6ddaeab4b3abf7a719c19034aca60eafd)) - clara.bayley
+#### Documentation
+- reorder steps - ([ac8820d](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/ac8820dcbed8ba1c633678214e00641a2c529874)) - clara.bayley
+- reorder steps - ([76eece6](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/76eece6f8e85010b7923b85254e031b62432991c)) - clara.bayley
+- improve details - ([a628cea](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/a628cea8298b1ad4c54c9c5e4c5a6097910f2dce)) - clara.bayley
+- add note on deleting the changelog - ([761d9f2](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/761d9f2f2b9793705e54680a9b7f9cde1c1fe4be)) - clara.bayley
+#### Miscellaneous Chores
+- formatting delete commas - ([3f19da1](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/3f19da1b3220cb9b4a078a5c02a67dcb55664f46)) - clara.bayley
+- formatting - ([f4ae440](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/f4ae4404c9451e8aef948ccd381fe156e43ea74a)) - clara.bayley
+
+- - -
+
 ## [v0.1.0](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/510cee1e1a18bd131554cb68a83ce2fb739435a4..v0.1.0) - 2024-08-30
 #### Bug Fixes
 - fix formating of precommit - ([84cd542](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/84cd542e08dc05f3ee98e4200385b3379644423e)) - clara.bayley
