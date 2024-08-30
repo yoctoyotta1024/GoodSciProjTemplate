@@ -2,10 +2,11 @@
 <html class="no-js" lang="en" data-content_root="../">
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
-    <meta name="color-scheme" content="light dark"><link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" />
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Python Package" href="../src_py/index.html" /><link rel="prev" title="Commit Messages and Versioning" href="cocogitto.html" />
 
     <!-- Generated with Sphinx 7.3.7 and Furo 2024.08.06 -->
-        <title>Overview: module code - GoodSciProjTemplate 0.0.0 documentation</title>
+        <title>Python Bindings for C++ - GoodSciProjTemplate 0.0.0 documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=354aac6f" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
@@ -178,7 +179,7 @@
           <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
         </button>
       </div>
-      <label class="toc-overlay-icon toc-header-icon no-toc" for="__toc">
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
         <div class="visually-hidden">Toggle table of contents sidebar</div>
         <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
       </label>
@@ -198,13 +199,13 @@
   <input type="hidden" name="area" value="default">
 </form>
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
-  <ul>
-<li class="toctree-l1"><a class="reference internal" href="../usage/getstart.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/getstart.html#making-the-project-your-own">Making the Project Your Own</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/ourdocs.html">Our Docs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/ourtests.html">Our Tests</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/cocogitto.html">Commit Messages and Versioning</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/pybind11.html">Python Bindings for C++</a></li>
+  <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstart.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getstart.html#making-the-project-your-own">Making the Project Your Own</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ourdocs.html">Our Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ourtests.html">Our Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cocogitto.html">Commit Messages and Versioning</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Python Bindings for C++</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../src_py/index.html">Python Package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Python Package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="../src_py/mock.html">Python Mock Module</a></li>
 </ul>
@@ -214,8 +215,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/yoctoyotta1024/GoodSciProjTemplate.git">GitHub Repo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/contributing.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../usage/contact.html">Contact Us!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact Us!</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../references.html">References</a></li>
 </ul>
 
@@ -236,7 +237,13 @@
           <span>Back to top</span>
         </a>
         <div class="content-icon-container">
-          <div class="theme-toggle-container theme-toggle-content">
+          <div class="view-this-page">
+  <a class="muted-link" href="../_sources/usage/pybind11.rst.txt" title="View this page">
+    <svg><use href="#svg-eye"></use></svg>
+    <span class="visually-hidden">View this page</span>
+  </a>
+</div>
+<div class="theme-toggle-container theme-toggle-content">
             <button class="theme-toggle">
               <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
               <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
@@ -245,22 +252,112 @@
               <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
             </button>
           </div>
-          <label class="toc-overlay-icon toc-content-icon no-toc" for="__toc">
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
             <div class="visually-hidden">Toggle table of contents sidebar</div>
             <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
           </label>
         </div>
         <article role="main" id="furo-main-content">
-          <h1>All modules for which code is available</h1>
-<ul><li><a href="libs/src_py/mock.html">libs.src_py.mock</a></li>
-</ul>
+          <section id="python-bindings-for-c">
+<h1>Python Bindings for C++<a class="headerlink" href="#python-bindings-for-c" title="Link to this heading">¶</a></h1>
+<p>This repository demonstrates how to use pybind11 to build Python modules out of
+C++ code so it can be used in Python like a “normal” Python module.</p>
+<p>You can see our example <a class="reference external" href="https://github.com/yoctoyotta1024/GoodSciProjTemplate/blob/main/libs/src_cxx/mock_cxx.hpp">libs/src_cxx/</a>.
+To make the Python bindings you can simply perform</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>cmake<span class="w"> </span>-S<span class="w"> </span>./<span class="w"> </span>-B<span class="w"> </span>./build
+<span class="gp">$ </span><span class="nb">cd</span><span class="w"> </span>build<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>make
+</pre></div>
+</div>
+<p>which fetches and uses pybind11 (see CMakeLists.txt) to make a Python module out of the C++ code.</p>
+<section id="deleting-c-from-this-repository">
+<h2>Deleting C++ From This Repository<a class="headerlink" href="#deleting-c-from-this-repository" title="Link to this heading">¶</a></h2>
+<p>Not using C++? Don’t want it in your repository? Then you can remove doxygen,
+breathe and certain files from your repository:</p>
+<p><em>Hint</em>: After you have successfully deleted the C++ parts of the repository,
+you can make the documentation without them, e.g. <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">./docs</span> <span class="pre">&amp;&amp;</span> <span class="pre">mkdir</span> <span class="pre">build</span> <span class="pre">&amp;&amp;</span> <span class="pre">make</span> <span class="pre">html</span></code>.</p>
+<p>To delete the C++ parts of the repository:</p>
+<ol class="arabic">
+<li><p>Delete the files/directories:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm<span class="w"> </span>-rf<span class="w"> </span>libs/src_cxx<span class="w"> </span>docs/doxygen<span class="w"> </span>CMakeLists.txt<span class="w"> </span>test_mock_cxx.py
+</pre></div>
+</div>
+</li>
+<li><p>In the file <code class="docutils literal notranslate"><span class="pre">.github/workflows/CI.yaml</span></code> delete:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Pybind11 module for C++ code</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">cmake -S ./ -B ./build</span>
+<span class="w">    </span><span class="no">cd build &amp;&amp; make</span>
+</pre></div>
+</div>
+<p>and</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Install Doxygen</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">/usr/share/miniconda/envs/goodsciproj_env/bin/doxygen --version</span>
+<span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Generate Doxygen Documentation</span>
+<span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
+<span class="w">    </span><span class="no">cd docs &amp;&amp;</span>
+<span class="w">    </span><span class="no">mkdir build &amp;&amp;</span>
+<span class="w">    </span><span class="no">mkdir build/doxygen &amp;&amp;</span>
+<span class="w">    </span><span class="no">/usr/share/miniconda/envs/goodsciproj_env/bin/doxygen doxygen/doxygen.dox</span>
+<span class="w">  </span><span class="nt">shell</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash</span>
+</pre></div>
+</div>
+</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">docs/source/conf.py</span></code> delete <code class="docutils literal notranslate"><span class="pre">&quot;breathe&quot;</span></code> from <code class="docutils literal notranslate"><span class="pre">extenstions</span></code> and</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Integrate doxygen with sphinx via breathe</span>
+<span class="n">breathe_projects</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;src_cxx&quot;</span><span class="p">:</span> <span class="s2">&quot;../build/doxygen/xml/&quot;</span><span class="p">,</span>
+<span class="p">}</span>
+
+<span class="n">breathe_default_project</span> <span class="o">=</span> <span class="s2">&quot;proj&quot;</span>
+</pre></div>
+</div>
+</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">.pre-commit-config.yaml</span></code> delete:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://gitlab.com/daverona/pre-commit/cpp</span>
+<span class="w">    </span><span class="nt">rev</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0.8.0</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w">   </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cpplint</span>
+<span class="w">        </span><span class="nt">args</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">--linelength=100</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="s">&quot;--filter=-runtime/references,-readability/braces,-build/include,-build/c++11&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="nt">types_or</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">c</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">c++</span><span class="p p-Indicator">,</span><span class="w"> </span><span class="nv">cuda</span><span class="p p-Indicator">]</span>
+</pre></div>
+</div>
+</li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> delete <code class="docutils literal notranslate"><span class="pre">breathe</span></code>.</p></li>
+<li><p>In <code class="docutils literal notranslate"><span class="pre">environment.yaml</span></code> delete <code class="docutils literal notranslate"><span class="pre">-</span> <span class="pre">conda-forge::doxygen&gt;=1.10.0</span></code></p></li>
+</ol>
+</section>
+<section id="pybind11">
+<h2>Pybind11<a class="headerlink" href="#pybind11" title="Link to this heading">¶</a></h2>
+<p><a class="reference external" href="https://github.com/pybind/pybind11/">https://github.com/pybind/pybind11/</a></p>
+</section>
+</section>
+
         </article>
       </div>
       <footer>
         
         <div class="related-pages">
-          
-          
+          <a class="next-page" href="../src_py/index.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Python Package</div>
+              </div>
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="cocogitto.html">
+              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Commit Messages and Versioning</div>
+                
+              </div>
+            </a>
         </div>
         <div class="bottom-of-page">
           <div class="left-details">
@@ -280,8 +377,28 @@
         
       </footer>
     </div>
-    <aside class="toc-drawer no-toc">
+    <aside class="toc-drawer">
       
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Python Bindings for C++</a><ul>
+<li><a class="reference internal" href="#deleting-c-from-this-repository">Deleting C++ From This Repository</a></li>
+<li><a class="reference internal" href="#pybind11">Pybind11</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
       
       
     </aside>

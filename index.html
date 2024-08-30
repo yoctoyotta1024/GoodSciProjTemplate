@@ -201,8 +201,11 @@
 <div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
   <ul>
 <li class="toctree-l1"><a class="reference internal" href="usage/getstart.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/getstart.html#making-the-project-your-own">Making the Project Your Own</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/ourdocs.html">Our Docs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/ourtests.html">Our Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/cocogitto.html">Commit Messages and Versioning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/pybind11.html">Python Bindings for C++</a></li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="src_py/index.html">Python Package</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Python Package</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
 <li class="toctree-l2"><a class="reference internal" href="src_py/mock.html">Python Mock Module</a></li>
 </ul>
@@ -271,16 +274,19 @@ scientific practises into your GitHub repositories. The template demonstrates:</
 <ul class="simple">
 <li><p>what to include in file headers</p></li>
 <li><p>how to document your Python and C++ code</p></li>
-<li><p>how to make tests for your code (using Python)</p></li>
+<li><p>how to make tests for your code (using pytest)</p></li>
 <li><p>how to liscence your code</p></li>
-<li><p>how to make a citation for your code</p></li>
-<li><p>things to include in .gitignore (e.g. large files like jupyter notebooks)</p></li>
-<li><p>how to list the requirements of your code (i.e. dependencies) and make a Python environment .yml file</p></li>
-<li><p>how to use pre-commit for code formatting (see <a class="reference external" href="https://pre-commit.com/">https://pre-commit.com/</a>)</p></li>
-<li><p>how to use continuous integration (CI) to run your tests and publish your documentation on GitHub (see <a class="reference external" href="https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration">https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration</a>)</p></li>
+<li><p>how to write a citation for your code</p></li>
+<li><p>things to include in a .gitignore file (e.g. large files like jupyter notebooks)</p></li>
+<li><p>how to list the requirements of your code (i.e. dependencies) in an environment YAML file</p></li>
+<li><p>how to use pre-commit for code checks, linting and formatting (see <a class="reference external" href="https://pre-commit.com/">https://pre-commit.com/</a>)</p></li>
+<li><p>how to use continuous integration (CI) to run pytest and publish documentation on GitHub
+(see instructions on <a class="reference external" href="https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration">continuous-integration on GitHub</a>).</p></li>
+<li><p>how to write conventional commit messages</p></li>
+<li><p>how to use conventional commits and CI for automatic version control on GitHub</p></li>
 </ul>
 <p>To (locally) reproduce this project, simply clone the repository. You will need to setup an
-environment with the dependencies installed and then run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code>, but other than
+environment with the dependencies installed and then run <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code> but other than
 that everything should work out of the box and you can now run &amp; have fun with the project…
 If not, please raise an issue on the GitHub repository.</p>
 <p>Time to get involved! Check out the <a class="reference internal" href="usage/getstart.html"><span class="doc">getting started page</span></a>.</p>
@@ -289,8 +295,11 @@ If not, please raise an issue on the GitHub repository.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="usage/getstart.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/getstart.html#making-the-project-your-own">Making the Project Your Own</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/ourdocs.html">Our Docs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage/ourtests.html">Our Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/cocogitto.html">Commit Messages and Versioning</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage/pybind11.html">Python Bindings for C++</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src_py/index.html">Python Package</a></li>
 <li class="toctree-l1"><a class="reference internal" href="src_cxx/index.html">C++ Package</a></li>
 <li class="toctree-l1"><a class="reference external" href="https://github.com/yoctoyotta1024/GoodSciProjTemplate.git">GitHub Repo</a></li>
