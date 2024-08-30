@@ -286,41 +286,51 @@ GitHub repo…</p>
 <ol class="arabic simple">
 <li><dl class="simple">
 <dt>Create an empty GitHub repository and set the remote url for your new project to it.</dt><dd><ol class="loweralpha simple">
-<li><p>delete <code class="docutils literal notranslate"><span class="pre">git&#64;github.com:yoctoyotta1024/GoodSciProjTemplate.git</span></code> from your remote with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">remove</span> <span class="pre">origin</span></code>,</p></li>
-<li><p>add your repository: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">[git&#64;github.com:your_repository_ssh.git]</span></code>,</p></li>
+<li><p>delete <code class="docutils literal notranslate"><span class="pre">git&#64;github.com:yoctoyotta1024/GoodSciProjTemplate.git</span></code> from your remote with <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">remove</span> <span class="pre">origin</span></code></p></li>
+<li><p>add your repository: <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">[git&#64;github.com:your_repository_ssh.git]</span></code></p></li>
 </ol>
 </dd>
 </dl>
 </li>
-<li><p>Make yourself the <code class="docutils literal notranslate"><span class="pre">github.repository_owner</span></code> who triggers GitHub’s CI to publish documentation (see <cite>.github/workflows/CI.yaml</cite>).</p></li>
-<li><p>Set your documentation to deploy using the <cite>/(root)</cite> folder of your gh-pages branch (see <a class="reference external" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">instructions for gitHub publishing</a>).</p></li>
-<li><p>Switch to a new branch using git and start customising the template…</p></li>
+<li><p>Switch to a new branch (not main!): <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">-c</span> <span class="pre">[branch_name]</span></code>, and start customising
+the template… <em>(hint: each of the following changes is a seperate commit. Remember to use coventional
+commit messages and don’t push to your remote branch until the end.)</em></p></li>
+<li><p>Make yourself the <code class="docutils literal notranslate"><span class="pre">github.repository_owner</span></code> who triggers GitHub’s CI to publish documentation
+(see <cite>.github/workflows/CI.yaml</cite> and <cite>.github/workflows/cocogitto.yaml</cite>).</p></li>
+<li><p>Make the project name yours instead of “GoodSciProjTemplate”.</p></li>
+<li><p>Make the citation and liscence refer to you instead of me.</p></li>
+<li><p>Correct the repository name and its owner for GitHub (e.g. in the <cite>.github/workflows/CI.yaml</cite>).</p></li>
+<li><p>Write a new README.md (shorter is generally better) and include a link to your documentation in it.</p></li>
+<li><p>Change the GitHub links in the .rst files to the correct ones for your GitHub repository
+(<em>hint</em>: you find these files in the <cite>docs</cite> directory).</p></li>
+<li><p>Delete GoodSciProjTemplate’s CHANGELOG.md <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">CHANGELOG.md</span></code>.</p></li>
+<li><dl class="simple">
+<dt>Delete any pre-existing tags and push a 0th version tag to your remote repository:</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span></code> to see any pre-existing tags, then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-d</span> <span class="pre">[pre-existing_tags]</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v0.0.0</span> <span class="pre">-m</span> <span class="pre">&quot;init</span> <span class="pre">repo</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code></p></li>
+</ol>
+</dd>
+</dl>
+</li>
+<li><p>Setup (or delete) cocogitto (see <a class="reference internal" href="cocogitto.html"><span class="doc">Commit Messages and Versioning</span></a>).</p></li>
+<li><p>Build (or delete) C++ code in the repository (see <a class="reference internal" href="pybind11.html"><span class="doc">Python Bindings for C++</span></a>).</p></li>
+<li><dl class="simple">
+<dt>Push all your changes to a branch of your GitHub repository (not main!).</dt><dd><ol class="loweralpha simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--set-upstream</span> <span class="pre">origin</span> <span class="pre">[branch_name]</span></code></p></li>
+</ol>
+</dd>
+</dl>
+</li>
 </ol>
 </section>
 <section id="necessary-second-steps">
 <h2>Necessary second steps:<a class="headerlink" href="#necessary-second-steps" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
-<li><dl class="simple">
-<dt>Create the 0th version tag in the remote repository:</dt><dd><ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span> <span class="pre">-a</span> <span class="pre">v0.0.0</span> <span class="pre">-m</span> <span class="pre">&quot;init</span> <span class="pre">repo&quot;</span></code>,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">--tags</span></code>.</p></li>
-</ol>
-</dd>
-</dl>
-</li>
-<li><p>Delete GoodSciProjTemplate’s CHANGELOG.md <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">CHANGELOG.md</span></code>.</p></li>
-<li><p>Make the project name yours instead of “GoodSciProjTemplate”.</p></li>
-<li><p>Make the citation and liscence refer to you instead of me.</p></li>
-<li><p>Corect the repository name and its owner for GitHub (e.g. in the CI.yaml).</p></li>
-<li><p>Write a new README.md (shorter is generally better) and include a link to your documentation in it.</p></li>
-<li><p>Change the GitHub links in the .rst files to the correct ones for your GitHub repository
-(<em>hint</em>: you find these files in the <cite>docs</cite> directory).</p></li>
-<li><p>Commit and push your changes to a branch of your GitHub repository (not main!).</p></li>
 <li><p>Create a pull request and accept it if your CI succeeds in order to to merge/rebase your
 changes to the main branch of your remote (GitHub) repository.</p></li>
-<li><p>Update your local main branch and any other local branches your have.</p></li>
-<li><p>Setup (or delete) cocogitto (see <a class="reference internal" href="cocogitto.html"><span class="doc">Commit Messages and Versioning</span></a>).</p></li>
-<li><p>Build (or delete) C++ code in the repository (see <a class="reference internal" href="pybind11.html"><span class="doc">Python Bindings for C++</span></a>).</p></li>
+<li><p>Set your documentation to deploy using the <cite>/(root)/</cite> folder of your gh-pages branch
+(see <a class="reference external" href="https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site">instructions for gitHub publishing</a>).</p></li>
 </ol>
 </section>
 <section id="some-suggested-third-steps">
@@ -363,23 +373,23 @@ you should perform <code class="docutils literal notranslate"><span class="pre">
 <ol class="arabic simple">
 <li><dl class="simple">
 <dt>Before you start making any change to your repo, you should first branch off your main branch:</dt><dd><ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">main</span></code>,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">-c</span> <span class="pre">[branch_name]</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">main</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">-c</span> <span class="pre">[branch_name]</span></code></p></li>
 </ol>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
 <dt>Make the changes you want and stage them with:</dt><dd><ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-p</span></code> (accept / decline changes).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">-p</span></code> (accept / decline changes)</p></li>
 </ol>
 </dd>
 </dl>
 </li>
 <li><dl class="simple">
 <dt>Commit your changes (frequently!!) with:</dt><dd><ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;&lt;type&gt;[optional</span> <span class="pre">scope]:</span> <span class="pre">&lt;description&gt;&quot;</span></code>,</p></li>
-<li><p>See <a class="reference external" href="https://www.conventionalcommits.org">conventional commit guidelines</a> for writing good commit messages.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;&lt;type&gt;[optional</span> <span class="pre">scope]:</span> <span class="pre">&lt;description&gt;&quot;</span></code></p></li>
+<li><p>See <a class="reference external" href="https://www.conventionalcommits.org">conventional commit guidelines</a> for writing good commit messages</p></li>
 </ol>
 </dd>
 </dl>
@@ -388,7 +398,7 @@ you should perform <code class="docutils literal notranslate"><span class="pre">
 <li><p>Create a pull request to merge/rebase your changes to your remote main branch.</p></li>
 <li><dl class="simple">
 <dt>Delete your local (and remote) branch after your pull request is accepted:</dt><dd><ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">[branch_name]</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-d</span> <span class="pre">[branch_name]</span></code></p></li>
 </ol>
 </dd>
 </dl>
@@ -400,8 +410,8 @@ make sure to keep your branch up-to-date! The more your branch differs from main
 you will encounter merge conflicts (not fun!). Keep your branches up to date by keeping your local
 main branch up-to-date and then keeping your branches up-to-date with your local main branch. E.g.</p>
 <ol class="loweralpha simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">main</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code>,</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">[branch_name]</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">main</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">main</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">switch</span> <span class="pre">[branch_name]</span></code> then <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span> <span class="pre">main</span></code></p></li>
 </ol>
 </section>
 </section>
