@@ -1,5 +1,4 @@
 pytest
-sphinx
 furo
 sphinx_copybutton
 sphinxcontrib-bibtex

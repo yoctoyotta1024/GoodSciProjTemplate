@@ -2,7 +2,7 @@ name: scienv
 dependencies:
     - python>=3.9
     - pytest
-    - sphinx
+    - sphinx<=7.4
     - conda-forge::doxygen>=1.10.0
     - pip
     - pip:
