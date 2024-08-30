@@ -35,38 +35,54 @@ Making the Project Your Own
 Necessary first steps:
 ###########################
 
-#. Create an empty GitHub repository and push your new project to it.
+#. Create an empty GitHub repository and set the remote url for your new project to it.
+  a. delete ``git@github.com:yoctoyotta1024/GoodSciProjTemplate.git`` from your remote with ``git remote remove origin``,
+  b. add your repository: ``git remote add origin [git@github.com:your_repository_ssh.git]``,
 #. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation (see `.github/workflows/CI.yaml`).
 #. Set your documentation to deploy using the `/(root)` folder of your gh-pages branch (see instructions `here <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_)
-#. Checkout to a new branch using git and start customising the template...
+#. Switch to a new branch using git and start customising the template...
+  a. ``git switch -c [branch_name]``,
+  b. [make changes],
+  c. ``git add -p`` (accept / decline changes),
+  d. ``git commit -m "<type>[optional scope]: <description>"`` (see the `conventional commits guidelines <https://www.conventionalcommits.org>`_),
+  e. ``git push``.
 
 Necessary second steps:
 #######################
 
+#. Create and push your first version tag to the repository:
+  a. ``git tag -a v0.0.0 -m "init repo"``,
+  b. ``git push --tags``.
 #. Make the project name yours instead of "GoodSciProjTemplate".
-#. Make the release/version yours instead of "0.0.0".
 #. Make the citation and liscence refer to you instead of me.
 #. Corect the repository name and its owner for GitHub (e.g. in the CI.yaml and cog.toml).
 #. Write a new README.md (shorter is generally better) and include a link to your documentation in it.
 #. Change the GitHub links in the .rst files to the correct ones for your GitHub repository (*hint*: you find these files in the `docs` directory).
+#. Commit and push your changes to a branch of your GitHub repository (not main!).
+#. Create a pull request and accept it if your CI succeeds to merge/rebase your changes to the main branch of your remote (GitHub) repository.
+#. Update your local main branch and any other local branches your have.
+  a. ``git switch main && git pull``,
+  b. ``git switch [other_branch] && git rebase main``.
 #. Setup (or delete) cocogitto
 #. Setup (or delete) Python bindings for C++
 
 Some suggested third steps:
 ###########################
+
+#. Make the release/version yours instead of "0.0.0".
 #. Change the names of the C++ and Python package names in the `libs` directory (maybe you also prefer to call "libs" "src"?)
 #. If you made a C++ library, set your ```INPUT``` in `doxygen.dox` and your ``breathe_projects`` and/or ``default_breathe_projects`` in `conf.py` to match the name of the new C++ library.
 #. Make a new Python or C++ module/subpackage (include docstrings and write unit tests in the `tests` directory!).
 #. Create an associated .rst file for your new module/subpackage (somewhere in the `docs/source` directory).
 #. Add the path to your new .rst file to the contents of the ``.. toctree::`` in `index.rst`.
 #. Push your changes to a branch of your GitHub repository (not main!).
-#. Create a pull request (and accept it if your tests pass) to merge your changes with the main branch of your GitHub repository.
-#. Be proud of your new code with documentation and tests.
+#. Create a pull request and accept it if your CI succeeds to merge your changes to the main branch of your remote (GitHub) repository.
+#. Be proud of your new code with documentation and tests!
 
 Want more ideas?!
 #################
 Have you thought about adding contributors, acknowledgements, more Python and/or
-other requirements/enviroments, more CI or pre-commit tasks, and an automatic file header
+other requirements/environments, more CI or pre-commit tasks, and an automatic file header
 generator? Maybe you've noticed this repository uses 
 `conventional commit <https://www.conventionalcommits.org/en/v1.0.0/>`_
 messages to enable `cocogitto<https://docs.cocogitto.io/>`_'s automatic version control?
