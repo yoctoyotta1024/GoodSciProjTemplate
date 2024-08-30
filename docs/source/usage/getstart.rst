@@ -61,7 +61,7 @@ Necessary second steps:
    changes to the main branch of your remote (GitHub) repository.
 #. Update your local main branch and any other local branches your have.
 #. Setup (or delete) cocogitto (see :doc:`cocogitto`).
-#. Setup (or delete) Python bindings for C++ (see :doc:`pybind11`).
+#. Build (or delete) C++ code in the repository (see :doc:`pybind11`).
 
 
 Some suggested third steps:

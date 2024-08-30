@@ -14,21 +14,22 @@ The conventional commit message structure is:
 
   [optional footer(s)]
 
-but you can find more information on their website (see below).
+but you can find more information on the conventional commit website (see below).
 
 Setting-Up Cocogitto
 ####################
-This repository is setup with a few of cocogitto's optional features enabled (see ``cog.toml``).
-One is that the changelog is generated via the CI relative to the first tag called "v0.0.0". You
-therefore need to add this tag to your remote repository, either on GitHub or by pushing the tag from
+This repository enables a few of cocogitto's optional features (see ``cog.toml``).
+One is that the changelog is generated via GitHub's CI relative to the first tag called "v0.0.0". You
+therefore need to add this tag to your GitHub repository, either on GitHub or by pushing the tag from
 your local repository, e.g.
-  a. ``git tag -a v0.0.0 -m "init repo"``,
-  b. ``git push --tags``.
 
-You also need to modify some settings in the cog.toml file under ``[changelog]``:
-  repository = "[your_repo_name]"
-  owner = "[your_github_username]"
-  authors = [{ username = "[your_github_username]", signature = "[your_name]" }]
+a. ``git tag -a v0.0.0 -m "init repo"``,
+b. ``git push --tags``.
+
+You also need to modify some settings in the ``cog.toml`` file under ``[changelog]``:
+    - ``repository = "[your_repo_name]"``
+    - ``owner = "[your_github_username]"``
+    - ``authors = [{ username = "[your_github_username]", signature = "[your_name]" }]``
 
 Deleting Cocogitto
 ##################

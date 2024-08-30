@@ -46,7 +46,7 @@ Contents
    usage/ourdocs
    usage/ourtests
    usage/cocogitto
-   usage/pybind
+   usage/pybind11
    src_py/index
    src_cxx/index
 
