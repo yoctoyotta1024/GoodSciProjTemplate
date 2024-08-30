@@ -45,7 +45,6 @@ Necessary first steps:
     d. ``git push -u origin main``
 #. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation
    (see `.github/workflows/CI.yaml` and `.github/workflows/cocogitto.yaml`).
-#. Set your documentation to deploy using the `/(root)` folder of your gh-pages branch (see `instructions for gitHub publishing <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_).
 #. Switch to a new branch using git and start customising the template...
 
 Necessary second steps:
@@ -61,7 +60,8 @@ Necessary second steps:
 #. Commit and push your changes to a branch of your GitHub repository (not main!).
 #. Create a pull request and accept it if your CI succeeds in order to to merge/rebase your
    changes to the main branch of your remote (GitHub) repository.
-#. Update your local main branch and any other local branches your have.
+#. Set your documentation to deploy using the `/(root)` folder of your gh-pages branch
+   (see `instructions for gitHub publishing <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_).
 #. Setup (or delete) cocogitto (see :doc:`cocogitto`).
 #. Build (or delete) C++ code in the repository (see :doc:`pybind11`).
 
