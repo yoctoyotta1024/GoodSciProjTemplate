@@ -2,6 +2,16 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.2](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/9bd77f49c76e4a7bb00e68c6c78d5d90ff3443da..v0.1.2) - 2024-08-30
+#### Bug Fixes
+- delete c++ links - ([d52e86f](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/d52e86fcf482cef2858f0d15e7752c3dcf141ed0)) - clara.bayley
+- path to test file to delete - ([ba27cad](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/ba27cade5b844a1fd799c3a289059a9c9fa8d8fb)) - clara.bayley
+- path to test file to delete - ([332d01c](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/332d01cb5a5bbf5409a78e1dd600fdce3d2934f1)) - clara.bayley
+#### Documentation
+- minor improvements - ([9bd77f4](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/9bd77f49c76e4a7bb00e68c6c78d5d90ff3443da)) - clara.bayley
+
+- - -
+
 ## [v0.1.1](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/f4ae4404c9451e8aef948ccd381fe156e43ea74a..v0.1.1) - 2024-08-30
 #### Bug Fixes
 - no commit to main - ([5f7c44b](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/5f7c44b6ddaeab4b3abf7a719c19034aca60eafd)) - clara.bayley
