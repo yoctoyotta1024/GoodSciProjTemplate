@@ -35,20 +35,21 @@ Making the Project Your Own
 Necessary first steps:
 ###########################
 
+#. Rename your GoodSciProjTemplate folder to the name of your project, e.g. ``mv GoodSciProjTemplate [project_name]``
 #. Create an empty GitHub repository and set the remote url for your new project to it.
     a. delete ``git@github.com:yoctoyotta1024/GoodSciProjTemplate.git`` from your remote with ``git remote remove origin``
     b. add your repository: ``git remote add origin [git@github.com:your_repository_ssh.git]``
-#. Switch to a new branch (not main!): ``git switch -c [branch_name]``, and start customising
-   the template... *(hint: each of the following changes is a seperate commit. Remember to use coventional
-   commit messages and don't push to your remote branch until the end.)*
+#. Switch to a new branch (not main!):
+    a. ``git switch -c [branch_name]``
+    b. and start customising the template... *(hint: each of the following changes is a seperate commit.
+       Remember to use coventional commit messages and don't push to your remote branch until the end.)*
 #. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation
    (see `.github/workflows/CI.yaml` and `.github/workflows/cocogitto.yaml`).
 #. Make the project name yours instead of "GoodSciProjTemplate".
 #. Make the citation and liscence refer to you instead of me.
-#. Correct the repository name and its owner for GitHub (e.g. in the `.github/workflows/CI.yaml`).
 #. Write a new README.md (shorter is generally better) and include a link to your documentation in it.
-#. Change the GitHub links in the .rst files to the correct ones for your GitHub repository
-   (*hint*: you find these files in the `docs` directory).
+#. Correct the GitHub links ("https://github.com/...") in the .rst files in the `docs` directory
+   to the ones for your GitHub repository.
 #. Delete GoodSciProjTemplate's CHANGELOG.md ``rm CHANGELOG.md``.
 #. Delete any pre-existing tags and push a 0th version tag to your remote repository:
     a. ``git tag`` to see any pre-existing tags, then ``git tag -d [pre-existing_tags]``
@@ -65,7 +66,7 @@ Necessary second steps:
 #. Create a pull request and accept it if your CI succeeds in order to to merge/rebase your
    changes to the main branch of your remote (GitHub) repository.
 #. Set your documentation to deploy using the `/(root)/` folder of your gh-pages branch
-   (see `instructions for gitHub publishing <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_).
+   (see `instructions for GitHub publishing <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_).
 
 
 Some suggested third steps:

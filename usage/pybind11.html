@@ -278,10 +278,11 @@ you can make the documentation without them, e.g. <code class="docutils literal 
 <p>To delete the C++ parts of the repository:</p>
 <ol class="arabic">
 <li><p>Delete the files/directories:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm<span class="w"> </span>-rf<span class="w"> </span>libs/src_cxx<span class="w"> </span>docs/doxygen<span class="w"> </span>CMakeLists.txt<span class="w"> </span>test_mock_cxx.py
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>rm<span class="w"> </span>-rf<span class="w"> </span>libs/src_cxx<span class="w"> </span>docs/source/src_cxx<span class="w"> </span>docs/doxygen<span class="w"> </span>CMakeLists.txt<span class="w"> </span>tests/test_mock_cxx.py
 </pre></div>
 </div>
 </li>
+<li><p>In the file <code class="docutils literal notranslate"><span class="pre">docs/source/index.rst</span></code> delete: <code class="docutils literal notranslate"><span class="pre">src_cxx/index</span></code> from the toctree.</p></li>
 <li><p>In the file <code class="docutils literal notranslate"><span class="pre">.github/workflows/CI.yaml</span></code> delete:</p>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Build Pybind11 module for C++ code</span>
 <span class="w">  </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">|</span>
