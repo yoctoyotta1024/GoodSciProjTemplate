@@ -32,6 +32,8 @@ To delete the C++ parts of the repository:
 
      $ rm -rf libs/src_cxx docs/source/src_cxx docs/doxygen CMakeLists.txt tests/test_mock_cxx.py
 
+#. In the file ``docs/source/index.rst`` delete: ``src_cxx/index`` from the toctree.
+
 #. In the file ``.github/workflows/CI.yaml`` delete:
 
    .. code-block:: yaml
