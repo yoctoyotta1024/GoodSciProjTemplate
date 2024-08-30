@@ -38,19 +38,18 @@ Necessary first steps:
 #. Create an empty GitHub repository and set the remote url for your new project to it.
     a. delete ``git@github.com:yoctoyotta1024/GoodSciProjTemplate.git`` from your remote with ``git remote remove origin``
     b. add your repository: ``git remote add origin [git@github.com:your_repository_ssh.git]``
-
-#. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation (see `.github/workflows/CI.yaml`).
+#. Delete any pre-existing tags and create the 0th version tag in the remote repository:
+    a. ``git tag`` to see any pre-existing tags, then ``git tag -d [pre-existing_tags]``
+    b. ``git tag -a v0.0.0 -m "init repo``
+    c. ``git push --tags``
+    d. ``git push -u origin main``
+#. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation
+   (see `.github/workflows/CI.yaml` and `.github/workflows/cocogitto.yaml`).
 #. Set your documentation to deploy using the `/(root)` folder of your gh-pages branch (see `instructions for gitHub publishing <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_).
 #. Switch to a new branch using git and start customising the template...
 
 Necessary second steps:
 #######################
-
-#. Create the 0th version tag in the remote repository:
-    a. ``git tag -a v0.0.0 -m "init repo"``
-    b. ``git push --tags``
-    c. ``git branch -M main``
-    d. ``git push -u origin main``
 
 #. Delete GoodSciProjTemplate's CHANGELOG.md ``rm CHANGELOG.md``.
 #. Make the project name yours instead of "GoodSciProjTemplate".
