@@ -46,10 +46,11 @@ Necessary first steps:
 Necessary second steps:
 #######################
 
-#. Create and push the 0th version tag to the repository:
+#. Create the 0th version tag in the remote repository:
     a. ``git tag -a v0.0.0 -m "init repo"``,
     b. ``git push --tags``.
 
+#. Delete GoodSciProjTemplate's CHANGELOG.md ``rm CHANGELOG.md``.
 #. Make the project name yours instead of "GoodSciProjTemplate".
 #. Make the citation and liscence refer to you instead of me.
 #. Corect the repository name and its owner for GitHub (e.g. in the CI.yaml).
