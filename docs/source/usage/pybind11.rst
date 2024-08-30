@@ -18,7 +18,70 @@ which fetches and uses pybind11 (see CMakeLists.txt) to make a Python module out
 Deleting C++ From This Repository
 #################################
 
-Not using C++? Don't want any bindings? Then you can remove certain files and doxygen from you repository.
+Not using C++? Don't want it in your repository? Then you can remove doxygen,
+breathe and certain files from your repository:
+
+*Hint*: After you have successfully deleted the C++ parts of the repository,
+you can make the documentation without them, e.g. ``cd ./docs && mkdir build && make html``.
+
+To delete the C++ parts of the repository:
+
+#. Delete the files/directories:
+
+   .. code-block:: console
+
+     $ rm -rf libs/src_cxx docs/doxygen CMakeLists.txt test_mock_cxx.py 
+
+#. In the file ``.github/workflows/CI.yaml`` delete:
+
+   .. code-block:: yaml
+
+     - name: Build Pybind11 module for C++ code
+       run: |
+         cmake -S ./ -B ./build
+         cd build && make
+
+   and 
+
+   .. code-block:: yaml
+
+      - name: Install Doxygen
+        run: /usr/share/miniconda/envs/goodsciproj_env/bin/doxygen --version
+        shell: bash
+      - name: Generate Doxygen Documentation
+        run: |
+          cd docs &&
+          mkdir build &&
+          mkdir build/doxygen &&
+          /usr/share/miniconda/envs/goodsciproj_env/bin/doxygen doxygen/doxygen.dox
+        shell: bash
+
+#. In ``docs/source/conf.py`` delete ``"breathe"`` from ``extenstions`` and
+
+   .. code-block:: python
+
+     # Integrate doxygen with sphinx via breathe
+     breathe_projects = {
+         "src_cxx": "../build/doxygen/xml/",
+     }
+
+     breathe_default_project = "proj"
+
+
+#. In ``.pre-commit-config.yaml`` delete:
+
+   .. code-block:: yaml
+
+     -   repo: https://gitlab.com/daverona/pre-commit/cpp
+         rev: 0.8.0
+         hooks:
+         -   id: cpplint
+             args: [--linelength=100, "--filter=-runtime/references,-readability/braces,-build/include,-build/c++11"]
+             types_or: [c, c++, cuda]
+
+#. In ``requirements.txt`` delete ``breathe``.
+
+#. In ``environment.yaml`` delete ``- conda-forge::doxygen>=1.10.0``
 
 
 Pybind11
