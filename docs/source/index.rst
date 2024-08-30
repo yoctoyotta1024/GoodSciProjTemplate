@@ -25,7 +25,8 @@ scientific practises into your GitHub repositories. The template demonstrates:
 * things to include in a .gitignore file (e.g. large files like jupyter notebooks)
 * how to list the requirements of your code (i.e. dependencies) in an environment YAML file
 * how to use pre-commit for code checks, linting and formatting (see https://pre-commit.com/)
-* how to use continuous integration (CI) to run pytest and publish documentation on GitHub (see https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration)
+* how to use continuous integration (CI) to run pytest and publish documentation on GitHub
+  (see instructions on `continuous-integration on GitHub <https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration>`_).
 * how to write conventional commit messages
 * how to use conventional commits and CI for automatic version control on GitHub
 
