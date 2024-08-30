@@ -17,6 +17,7 @@ repos:
         description: Checks file ends on newline
     -   id: no-commit-to-branch
         name: No direct commit to main
+        args: ['--branch', 'main']
         description: Do not commit to main directly
     -   id: trailing-whitespace
         name: Trim trailing whitespaces
