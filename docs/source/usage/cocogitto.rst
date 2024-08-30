@@ -20,8 +20,8 @@ Setting-Up Cocogitto
 ####################
 This repository enables a few of cocogitto's optional features (see ``cog.toml``).
 One is that the changelog is generated via GitHub's CI relative to the first tag called "v0.0.0". You
-therefore need to add this tag to your GitHub repository, either on GitHub or by pushing the tag from
-your local repository, e.g.
+therefore need to delete any existing ``CHANGELOG.md`` and then add this tag to your GitHub repository,
+either on GitHub or by pushing the tag from your local repository, e.g.
 
 a. ``git tag -a v0.0.0 -m "init repo"``,
 b. ``git push --tags``.
