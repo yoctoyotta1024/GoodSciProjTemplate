@@ -30,7 +30,7 @@ To delete the C++ parts of the repository:
 
    .. code-block:: console
 
-     $ rm -rf libs/src_cxx docs/doxygen CMakeLists.txt test_mock_cxx.py 
+     $ rm -rf libs/src_cxx docs/doxygen CMakeLists.txt test_mock_cxx.py
 
 #. In the file ``.github/workflows/CI.yaml`` delete:
 
@@ -41,7 +41,7 @@ To delete the C++ parts of the repository:
          cmake -S ./ -B ./build
          cd build && make
 
-   and 
+   and
 
    .. code-block:: yaml
 
