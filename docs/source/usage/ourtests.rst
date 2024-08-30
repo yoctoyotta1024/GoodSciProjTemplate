@@ -2,7 +2,7 @@ Our Tests
 =========
 
 This project uses pytest for executing the Python tests in the `./tests` directory. These tests are
-included in the CI.yml and can be used to test both Python and C++ code.
+included in the CI.yaml and can be used to test both Python and C++ code.
 
 .. _python-test:
 

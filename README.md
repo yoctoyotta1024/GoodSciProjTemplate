@@ -1,8 +1,8 @@
 # Template for Good Python and C++ Scientific Project
 
-This code is adapted from [this](https://juliadynamics.github.io/DrWatson.jl/stable) template for
+This code is adapted from [this template](https://juliadynamics.github.io/DrWatson.jl/stable) for
 Julia Language to make a reproducible scientific project for Python and C++ code in light of the
-guidelines from [this](https://www.youtube.com/watch?v=x3swaMSCcYk) Good Scientific Code Workshop by
+guidelines from [this Good Scientific Code Workshop](https://www.youtube.com/watch?v=x3swaMSCcYk) by
 George Datseris.
 
 ## Install
@@ -10,11 +10,11 @@ To (locally) reproduce this project simply clone the repository:
 ```
 git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 ```
-and then create an environment with the necessary dependencies installed (using micromamba, mamba
-or conda as listed in the environment.yml):
+and then create an environment with the necessary dependencies installed (e.g. using micromamba
+or conda as listed in the environment.yaml):
 ```
-conda env create -f environment.yml
-conda activate scienv
+micromamba env create -f environment.yaml
+micromamba activate goodsciproj_env
 ```
 Finally you need to run ``pre-commit install`` but other than that everything should work out of
 the box and you can now run & have fun with the project... If not, please raise an issue on the
