@@ -13,7 +13,7 @@ jobs:
       - uses: conda-incubator/setup-miniconda@v3
         with:
           activate-environment: goodsciproj_env
-          environment-file: environment.yml
+          environment-file: environment.yaml
           auto-activate-base: false
 
       - name: Conda Info

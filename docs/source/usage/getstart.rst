@@ -10,11 +10,11 @@ Clone GoodSciProjTemplate's GitHub repository:
   $ git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 
 and then create an environment with the necessary dependencies installed (e.g. using micromamba,
-or conda as listed in the environment.yml):
+or conda as listed in the environment.yaml):
 
 .. code-block:: console
 
-  $ micromamba create -f environment.yml
+  $ micromamba create -f environment.yaml
   $ micromamba activate goodsciproj_env
 
 Finally install the pre-commit hooks:
@@ -36,7 +36,7 @@ Necessary first steps:
 ###########################
 
 #. Create an empty GitHub repository and push your new project to it.
-#. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation (see `.github/workflows/CI.yml`).
+#. Make yourself the ``github.repository_owner`` who triggers GitHub's CI to publish documentation (see `.github/workflows/CI.yaml`).
 #. Set your documentation to deploy using the `/(root)` folder of your gh-pages branch (see instructions `here <https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>`_)
 #. Checkout to a new branch using git and start customising the template...
 
@@ -46,7 +46,7 @@ Necessary second steps:
 #. Make the project name yours instead of "GoodSciProjTemplate".
 #. Make the release/version yours instead of "0.0.0".
 #. Make the citation and liscence refer to you instead of me.
-#. Corect the repository name and its owner for GitHub (e.g. in the CI.yml and cog.toml).
+#. Corect the repository name and its owner for GitHub (e.g. in the CI.yaml and cog.toml).
 #. Write a new README.md (shorter is generally better) and include a link to your documentation in it.
 #. Change the GitHub links in the .rst files to the correct ones for your GitHub repository (*hint*: you find these files in the `docs` directory).
 #. Setup (or delete) cocogitto
