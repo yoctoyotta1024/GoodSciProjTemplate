@@ -13,7 +13,7 @@ git clone https://github.com/yoctoyotta1024/GoodSciProjTemplate.git
 and then create an environment with the necessary dependencies installed (e.g. using micromamba
 or conda as listed in the environment.yaml):
 ```
-micromamba create -f environment.yaml
+micromamba env create -f environment.yaml
 micromamba activate goodsciproj_env
 ```
 Finally you need to run ``pre-commit install`` but other than that everything should work out of

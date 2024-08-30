@@ -14,7 +14,7 @@ or conda as listed in the environment.yaml):
 
 .. code-block:: console
 
-  $ micromamba create -f environment.yaml
+  $ micromamba env create -f environment.yaml
   $ micromamba activate goodsciproj_env
 
 Finally install the pre-commit hooks:
