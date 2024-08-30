@@ -45,6 +45,8 @@ Contents
    usage/getstart
    usage/ourdocs
    usage/ourtests
+   usage/cocogitto
+   usage/pybind
    src_py/index
    src_cxx/index
 

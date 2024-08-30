@@ -60,8 +60,8 @@ Necessary second steps:
 #. Create a pull request and accept it if your CI succeeds in order to to merge/rebase your
    changes to the main branch of your remote (GitHub) repository.
 #. Update your local main branch and any other local branches your have.
-#. Setup (or delete) cocogitto
-#. Setup (or delete) Python bindings for C++
+#. Setup (or delete) cocogitto (see :doc:`cocogitto`).
+#. Setup (or delete) Python bindings for C++ (see :doc:`pybind11`).
 
 
 Some suggested third steps:
@@ -83,10 +83,9 @@ Want more ideas?!
 #################
 
 Have you thought about adding contributors, acknowledgements, more Python and/or
-other requirements/environments, more CI or pre-commit tasks, and an automatic file header
-generator? Maybe you've noticed this repository uses 
-`conventional commit <https://www.conventionalcommits.org/en/v1.0.0/>`_
-messages to enable `cocogitto <https://docs.cocogitto.io/>`_'s automatic version control?
+other requirements/environments, more CI or pre-commit tasks, and an automatic
+file header generator? Maybe you've noticed this repository uses conventional
+commits to enable cocogitto's automatic version control?
 Or maybe you should ponder all this over a cup of tea and some biscuits...
 
 
