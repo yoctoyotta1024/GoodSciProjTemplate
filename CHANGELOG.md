@@ -2,6 +2,13 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.3](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/7614612492509a0d63024c295451bd065b511ccc..v0.1.3) - 2024-09-04
+#### Bug Fixes
+- fix sphinx dependencies after sphinx version 8 - ([820fc34](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/820fc343b84226cd83607ff1dd2e3cf505e2036f)) - clara.bayley
+- Security vulnerability - ([7614612](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/7614612492509a0d63024c295451bd065b511ccc)) - clara.bayley
+
+- - -
+
 ## [v0.1.2](https://github.com/yoctoyotta1024/GoodSciProjTemplate/compare/9bd77f49c76e4a7bb00e68c6c78d5d90ff3443da..v0.1.2) - 2024-08-30
 #### Bug Fixes
 - delete c++ links - ([d52e86f](https://github.com/yoctoyotta1024/GoodSciProjTemplate/commit/d52e86fcf482cef2858f0d15e7752c3dcf141ed0)) - clara.bayley
