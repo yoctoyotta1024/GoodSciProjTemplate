@@ -2,7 +2,7 @@ name: goodsciproj_env
 dependencies:
     - python>=3.9
     - pytest
-    - sphinx<=7.4 # TODO(CB): update sphinx allowed version (after they fix their bug)
+    - sphinx
     - conda-forge::doxygen>=1.10.0
     - pip
     - pip:
